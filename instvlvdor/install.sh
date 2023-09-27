@@ -425,7 +425,7 @@ Install_key() {
     updatedb
     if [[ -e $HOME/lista-arq ]] && [[ ! $(cat /etc/SCRIPT-LATAM/errorkey | grep "Codificacion Incorrecta") ]]; then
       msgi -bar2
-      msgi -verd " Ficheros Copiados \e[97m[\e[93m Key By @Panel_NetVPS_bot \e[97m]"
+      msgi -verd " Ficheros Copiados \e[97m[\e[93m Key By @drowkid01 \e[97m]"
       REQUEST=$(ofus "$Key" | cut -d'/' -f2)
       [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
       pontos="."
@@ -451,7 +451,7 @@ Install_key() {
       [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}
       [[ ${byinst} = "true" ]] && install_fim
     else
-      install_key
+      Install_key
     fi
   }
   incertar_key
