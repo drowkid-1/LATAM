@@ -1,4 +1,4 @@
-#!/bin/bash
+l#!/bin/bash
 # INSTALADO --- ACTULIZADO EL 12-01-2023 --By @Kalix1
 clear && clear
 colores="$(pwd)/colores"
@@ -433,7 +433,7 @@ Install_key() {
       for arqx in $(cat $HOME/lista-arq); do
         msgi -verm "${stopping}${pontos}"
         wget --no-check-certificate -O ${SCPinstal}/${arqx} ${IP}:81/${REQUEST}/${arqx} >/dev/null 2>&1 && verificar_arq "${arqx}" || {
-          error_fun
+          Install_key
           exit
         }
         tput cuu1 && tput dl1
