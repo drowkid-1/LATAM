@@ -451,7 +451,7 @@ Install_key() {
       [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}
       [[ ${byinst} = "true" ]] && install_fim
     else
-      invalid_key
+      install_key
     fi
   }
   incertar_key
