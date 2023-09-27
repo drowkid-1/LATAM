@@ -1,4 +1,4 @@
-l#!/bin/bash
+#!/bin/bash
 # INSTALADO --- ACTULIZADO EL 12-01-2023 --By @Kalix1
 clear && clear
 colores="$(pwd)/colores"
